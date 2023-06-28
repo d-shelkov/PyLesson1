@@ -7,8 +7,5 @@ while RunAgain:
     if num3d.isdigit(): 
         RunAgain = False if 99 < int(num3d) < 1000 else True
     second = True
-d3 = int(num3d) - int(num3d) % 100
-d2 = (int(num3d) - d3) - (int(num3d) - d3) % 10
-d1 = int(num3d) % 10
-print('Digits of entered number are: ', int(d3/100), ', ', int(d2/10), ' and ', d1, '.')
-print('Sum of number digits is: ', int(d3/100) + int(d2/10) + d1)
+print('Digits of entered number are: ', num3d[0], ', ', num3d[1], ' and ', num3d[2], '.')
+print('Sum of number digits is: ', int(num3d[0]) + int(num3d[1]) + int(num3d[2]))
